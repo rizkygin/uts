@@ -2,6 +2,7 @@
   "name": "uts",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://rizkygin.github.io/uts",
   "dependencies": {
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
@@ -11,10 +12,15 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": "react-app"
+  },
+  "devDependencies": {
+    "gh-pages": "^2.0.1"
   },
   "browserslist": [
     ">0.2%",
